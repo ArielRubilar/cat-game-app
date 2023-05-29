@@ -1,0 +1,53 @@
+.container {
+    width: min(100%, 400px);
+    margin-inline: auto;
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+}
+
+main {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+}
+
+.btn-reset {
+    color: inherit;
+    background: none;
+    border: 1px solid currentColor;
+    padding: .5rem 1rem ;
+    border-radius: .25rem;
+    font-weight: 500;
+    cursor: pointer;
+}  
+
+.btn-reset:is(:hover, :focus) {
+    background: #1535665d;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.modal[open] {
+    margin: auto;
+    color: inherit;
+    min-width: 200px;
+    padding: 1rem;
+    border: .25rem;
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+    border: 1px solid #1535665d;
+    background: #637ca0;
+}
+
+
+.modal::backdrop {
+    display: grid;
+    place-items: center;
+    background: rgba(0, 0, 0, .5);
+}
