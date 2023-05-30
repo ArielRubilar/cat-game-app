@@ -16,9 +16,7 @@ export const useCatGame = (): useCatGameReturn => {
   }, [])
 
   const [matrix, setMatrix] = useState(catGame.getMatrix())
-
   const [stateOfGame, setStateOfGame] = useState(catGame.getStateOfGame())
-
   const [player, setPlayer] = useState(catGame.getCurrentPlayer())
   const [winner, setWinner] = useState<Player | undefined>(undefined)
 

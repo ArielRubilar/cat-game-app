@@ -1,0 +1,13 @@
+.btn {
+    color: inherit;
+    background: none;
+    border: 1px solid currentColor;
+    padding: .5rem 1rem ;
+    border-radius: .25rem;
+    font-weight: 500;
+    cursor: pointer;
+}  
+
+.btn:is(:hover, :focus) {
+    background: var(--primary-dark);
+}

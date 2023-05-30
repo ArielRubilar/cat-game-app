@@ -16,5 +16,11 @@
 }
 
 .cell:is(:hover, :focus) {
-    background: #1535665d;;
+    background: var(--primary-dark);
+}
+
+.cell[aria-disabled='true'] {
+    cursor: no-drop;
+    pointer-events: none;
+    background: var(--primary-dark);
 }

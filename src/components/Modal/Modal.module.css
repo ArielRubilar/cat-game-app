@@ -3,12 +3,12 @@
     color: inherit;
     min-width: 200px;
     padding: 1rem;
-    border: .25rem;
+    border-radius: .25rem;
     display: grid;
     gap: 1rem;
     text-align: center;
-    border: 1px solid #1535665d;
-    background: #637ca0;
+    border: 1px solid var(--primary-dark);
+    background: var(--primary);
 }
 
 
