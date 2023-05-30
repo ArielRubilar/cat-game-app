@@ -4,11 +4,10 @@ import styles from './Cell.module.css'
 export interface CellProps {
   value: CatGamePiece | undefined
   onPlay: () => void
+  disabled?: boolean
 }
 
-export const Cell = ({ value, onPlay }: CellProps): JSX.Element => {
-  const disabled = value !== undefined
-
+export const Cell = ({ value, onPlay, disabled }: CellProps): JSX.Element => {
   const handleClick = (): void => {
     if (!disabled) onPlay()
   }

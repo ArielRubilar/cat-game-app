@@ -27,7 +27,7 @@ function App (): JSX.Element {
             : (<p>Player { winner } (  { winner === PLAYERS.A ? CAT_GAME_PIECE.O : CAT_GAME_PIECE.X}  ) Win!!! </p>)
         }
 
-        <Board matrix={matrix} onPlay={play}/>
+        <Board matrix={matrix} onPlay={play} gameIsOver={areWinner}/>
         <Button onClick={reset}>Reset Game</Button>
       </div>
     </main>
